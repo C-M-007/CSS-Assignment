@@ -36,11 +36,10 @@ print("\n")
 
 #Part-B
 #USING ITERATIONS(for/while loops)
-print("Solving by Iterative Method...")           
-
 from tracemalloc import start
 from math import factorial, remainder
 m=int(input("Enter number of rows for the pascal triangle:"))
+print("Solving by Iterative Method...")
 for s in range(m):
     for x in range(m-s):
         print(end=" ")      #Assinging the spaces according to the design.....

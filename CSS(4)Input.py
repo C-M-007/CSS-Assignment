@@ -38,13 +38,15 @@ print("\n")
 #USING ITERATIONS(for/while loops)
 print("Solving by Iterative Method...")           
 
-for i in range(n):
-	for j in range(n-i+1):
-		print(end=" ")
-
-	for j in range(i+1):
-		print(factorial(i)//(factorial(j)*factorial(i-j)), end=" ")      #nCr = n!/r!*(n-r)!
-	print()
+from tracemalloc import start
+from math import factorial, remainder
+m=int(input("Enter any number:"))
+for s in range(m):
+    for x in range(m-s):
+        print(end=" ")      #Assinging the spaces according to the design.....
+    for x in range(s+1):
+        print(factorial(s)//(factorial(x)*factorial(s-x)), end=" ")     #nCr = n!/r!*(n-r)!
+    print()
 print("\n\n")
 
 
